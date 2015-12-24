@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="EasyDragLayout">
+
+        <!--
+           drag mode,selection custom,edge,
+   	    custom : move center to scroll left or right,
+   	    edge : move left'edge,right'edge or left,right to move
+   	    when edge mode enable ,drag center disable,can't caputure center;
+        -->
+        <attr name="edl_dragmode" format="string"></attr>
+        <!-- center positon ,default bottom ,selection top,bottom -->
+        <attr name="edl_centerposition" format="string"></attr>
+       
+
+        <!-- child id,default left center right ,if want center right,should declare -->
+        <attr name="edl_leftid" format="reference"></attr>
+        <attr name="edl_rightid" format="reference"></attr>
+        <attr name="edl_centerid" format="reference"></attr>
+        <!-- child scale when scroll,default center 0.5f,else 1f -->
+        <attr name="edl_leftscale" format="float"></attr>
+        <attr name="edl_rightscale" format="float"></attr>
+        <attr name="edl_centerscale" format="float"></attr>
+
+        <!-- child alpha when scroll,default 1f -->
+        <attr name="edl_leftalpha" format="float"></attr>
+        <attr name="edl_rightalpha" format="float"></attr>
+        <attr name="edl_centeralpha" format="float"></attr>
+
+        <!-- can drag view,defulat center ,selection all,center|left|right,none -->
+        <attr name="edl_capture" format="string"></attr>
+        
+         <!--
+        seletion all,left|right,none ,default all,
+        which can open by drag
+        -->
+        <attr name="edl_openbytouch" format="string"></attr>
+
+        <!-- center rotation enable,default false -->
+        <attr name="edl_use3D" format="boolean"></attr>
+        <!-- pin center when drag left or right -->
+        <attr name="edl_pincenter" format="boolean"></attr>
+        
+        <!-- throughWhenOpen ,default flase-->
+        <attr name="edl_throughWhenOpen" format="boolean"> </attr>
+    </declare-styleable>
+
+</resources>
